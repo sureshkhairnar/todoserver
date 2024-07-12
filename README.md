@@ -30,6 +30,11 @@ PUT /api/tasks/:id: Update a task
 DELETE /api/tasks/:id: Delete a task
 DELETE /api/tasks: Delete all tasks
 
+# Troubleshooting
+If you encounter any issues, please check the console for error messages and ensure that all dependencies are installed correctly.
+
+For any other issues, please contact Suresh Khairnar at sureshkhairnar137@gmail.com.
+
 # note
 I have used mongodb compass for mongo and used mongoose driver for connection
 
