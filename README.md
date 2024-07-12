@@ -23,6 +23,13 @@ npm install
 # Run the Application
 node server
 
+# API Endpoints
+GET /api/tasks: Retrieve all tasks
+POST /api/tasks: Create a new task
+PUT /api/tasks/:id: Update a task
+DELETE /api/tasks/:id: Delete a task
+DELETE /api/tasks: Delete all tasks
+
 # note
 I have used mongodb compass for mongo and used mongoose driver for connection
 

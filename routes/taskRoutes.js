@@ -68,18 +68,18 @@ router.delete("/:id", async (req, res) => {
 });
 
 // DELETE all tasks
-router.delete("/", async (req, res) => {
-  try {
-    const deletedAllTasks = await Task.deleteMany();
-    if (deletedAllTasks.deletedCount === 0) {
-      return res.status(404).json({ message: "Tasks not found" });
-    }
-    res.json({ message: "All Tasks deleted successfully" });
-  } catch (error) {
-    console.error("Error deleting task:", error);
-    res.status(500).json({ message: "Internal server error" });
-  }
-});
+// router.delete("/", async (req, res) => {
+//   try {
+//     const deletedAllTasks = await Task.deleteMany();
+//     if (deletedAllTasks.deletedCount === 0) {
+//       return res.status(404).json({ message: "Tasks not found" });
+//     }
+//     res.json({ message: "All Tasks deleted successfully" });
+//   } catch (error) {
+//     console.error("Error deleting task:", error);
+//     res.status(500).json({ message: "Internal server error" });
+//   }
+// });
 
 async function getTask(req, res, next) {
   let task;
