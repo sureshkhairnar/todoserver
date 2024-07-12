@@ -18,7 +18,7 @@ git clone https://github.com/sureshkhairnar/todoserver.git
 cd todoserver
 
 # Install dependencies
-npm install
+npm install or yarn install
 
 # Run the Application
 node server
